@@ -1,0 +1,103 @@
+<!--creamos proyecto de pagina de pizzas para las practicas de jovenes programadores-->
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza pedidos gastonexequielfernandez</title>
+    </head>
+    <body><div class="contenedor">
+        <h1>Pizza planeta</h1>
+        <h6>Pida su pizza en pizzas planeta</h6>
+        <form>
+            <p>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo" required>
+            </p>
+            <p>
+                <label for="telefono">Numero de telefono:</label>
+                <input type="text" name="numero-de-telefono" pattern="[0-9]+" id="telefono" placeholder="Ingrese su numero de telefono" required>
+            </p>
+            <fieldset>
+                <legend>Tamaño de la pizza</legend>
+                <div>
+                    <label> <input type="radio" name="size">Pequeña</label><br>
+                </div>
+                <div>
+                    <label> <input type="radio" name="size">Mediana</label><br>
+                </div>
+                <div>
+                    <label> <input type="radio" name="size">Grande</label><br>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Ingredientes de pizza</legend>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Tomate</label><br>
+                </div>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Aceitunas</label><br>
+                </div>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Cebolla</label><br>
+                </div>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Jamon</label><br>
+                </div>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Champiñon</label><br>
+                </div>
+                <div>
+                    <label> <input type="checkbox" name="Ingredientes">Huevo</label><br>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>Fecha y hora de entrega</legend>
+                <p>
+                    <label>Fecha de entrega: <input type="date"></label>
+                </p>
+                <p>
+                    <label>Hora de entrega: <input type="time"></label>
+                </p>
+            </fieldset><br>
+            <fieldset>
+                <legend>Instrucciones de entrega</legend>
+                <p>
+                    <textarea name="Instrucciones" id="Instrucciones" cols="140" rows="3"></textarea>
+                </p>
+            </fieldset>
+            <button id="solicitar-pedido" value="enviar" >Solicitar pedido</button>
+        </form>
+    </div></body>
+    <style>
+        body {
+            text-align: center;
+        }
+        .contenedor {
+            margin:0 auto;
+            max-width: 800px;
+        }
+        fieldset {
+            display: flex;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+        }
+        label {
+            width: 200px;
+            text-align: right;
+            margin-right:10px;
+        }
+        input {
+            width: 100px;
+        }
+    </style>
+</html>
+
+
+
